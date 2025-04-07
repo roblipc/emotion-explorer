@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tableau des Émotions</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>💬 Explorateur des Émotions</h1>
+    <p>Clique sur une émotion pour en explorer la signification</p>
+  </header>
+
+  <main>
+    <section class="emotion-table">
+      <div class="category">
+        <h2>Par rapport au besoin</h2>
+        <div class="emotion-buttons" id="besoin"></div>
+      </div>
+      <div class="category">
+        <h2>Par rapport à l'obstacle</h2>
+        <div class="emotion-buttons" id="obstacle"></div>
+      </div>
+      <div class="category">
+        <h2>Par anticipation (futur)</h2>
+        <div class="emotion-buttons" id="futur"></div>
+      </div>
+    </section>
+
+    <section id="emotionDetails" class="hidden">
+      <h2 id="emotionName"></h2>
+      <p><strong>Type :</strong> <span id="emotionType"></span></p>
+      <p><strong>Définition :</strong> <span id="emotionDef"></span></p>
+      <p><strong>Besoins associés :</strong> <span id="emotionNeeds"></span></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Explorateur Émotions</p>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
